@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body, html, #root {
+    width: 100%;
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Component {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Component .Box {
+    width: 500px;
+    height: auto;
+    padding: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Component .Box .Form {
+    display: flex;
+    flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.Component .Box .Form h3 {
+    font-weight: 200;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Component .Box h1 {
+    font-weight: 300;
+    text-align: center;
+}
+.Component .Box .Line {
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    opacity: 0.6;
+}
+.Link {
+    font-weight: 200;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 200;
+    color: rgb(88, 88, 255);
+}
+.Forgot-pass {
+    text-align: center;
+    font-size: 17px;
+}
+.UserInfo {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+.UserInfo-redirect {
+    color: white;
+    text-decoration: none;
+}
+.Error {
+    color: black;
+    /* padding: auto; */
+    border-radius: 3px;
+    width: auto;
+    height: auto;
+    display: inline;
+    background-color: rgb(231, 127, 127);
 }
